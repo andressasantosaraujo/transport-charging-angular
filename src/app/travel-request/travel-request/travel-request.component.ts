@@ -12,4 +12,8 @@ export class TravelRequestComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchBusLine() {
+    
+  }
+
 }
