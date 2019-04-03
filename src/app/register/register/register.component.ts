@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  signup() {
+  signin() {
     this.router.navigateByUrl('login');
   }
 

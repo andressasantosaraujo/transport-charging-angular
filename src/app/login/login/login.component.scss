@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #FDFFF7;
+    font-family: 'Rubik', sans-serif;
+    :focus {
+        outline: none
+    }
+}
+.login {
+    width: 50%;
+    flex-grow: 1;
+    order: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 50px
+    }
+    p {
+        color: #555a59;
+        font-size: 18px;
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        background-color: #28b498;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Baloo Chettan', cursive;
+        cursor: pointer;
+        &:hover {
+            background-color: #3cc6a5;
+            transition: ease-in-out .3s;
+        }
+    }
+}
+.register {
+    background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%);
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    flex-grow: 1;
+    order: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 50px;
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+        font-size: 19px;
+        margin: 50px;
+        width: 300px;
+        line-height: 43px;
+        font-weight: normal;
+        text-align: center;
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        background-color: #ffffff;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: normal;
+        cursor: pointer;
+        &:hover {
+            color: #28b498;
+            transition: ease-in-out .3s;
+        }
+    }
+}
+input {
+    height: 48px;
+    width: 420px;
+    margin: 10px;
+    border: none;
+    background-color: #eef5f3;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 15px;
+    
+}

@@ -7,7 +7,7 @@ import { Router, Route, ActivatedRoute } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+  public currentState: string = 'initial';
   constructor(private router: Router) { }
 
   ngOnInit() {

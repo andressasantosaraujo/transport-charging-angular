@@ -1,7 +1,22 @@
-<div class="content">
-<h2>Hello</h2>
-<input type="text" name="login" placeholder="login" required > 
-<input type="password" name="password" placeholder="password" required >
-<button (click)="signin()">Sign in</button>
-<button (click)="signup()">Sign up</button>
+<div class="container">
+    <div class="login">
+        <h1>
+            Sing in to T.C.A
+        </h1>
+        <p>
+            Sign in to T.C.A and enjoy the practicality on your travel.
+        </p>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign in</button>
+    </div>
+    <div class="register">
+        <h1>
+            New here?
+        </h1>
+        <p>
+            Create your account to discovery the practicality to pay your travel!
+        </p>
+        <button (click)="signup()">Sign up</button>
+    </div>
 </div>

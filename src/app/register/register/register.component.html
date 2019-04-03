@@ -1,11 +1,28 @@
-<div class="content">
-<h2>Register</h2>
-<input type="text" name="nome" placeholder="Nome: " required >
-<input type="text" name="senha" placeholder="Senha: " required >
-<input type="text" name="email" placeholder="E-mail: " required >
-<input type="text" name="telefone" placeholder="Telefone: " required >
-<input type="text" name="endereco" placeholder="Endereço: " required >
-<input type="text" name="cep" placeholder="CEP: " required >
-<input type="text" name="cartao-credito" placeholder="Cartão de crédito: " required >
-<button (click)="signup()">Sign up</button>
+<div class="container">
+    <div class="register">
+        <h1>
+            Create your account into T.C.A
+        </h1>
+        <p>
+            Sign up to T.C.A fill out the form below.
+        </p>
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Name" />
+        <input type="number" placeholder="Contact" />
+        <input type="text" placeholder="Adress" />
+        <input type="number" placeholder="Nº" />
+        <input type="number" placeholder="Nº of credit card" />
+        <input type="number" placeholder="security code" />
+        <input type="password" placeholder="Password" />
+        <button>Sign up</button>
+    </div>
+    <div class="login">
+        <h1>
+            One of us?
+        </h1>
+        <p>
+            If you already have an account, click here to sign in.
+        </p>
+        <button (click)="signin()">Sign in</button>
+    </div>
 </div>
