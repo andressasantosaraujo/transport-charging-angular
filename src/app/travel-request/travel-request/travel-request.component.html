@@ -1,5 +1,12 @@
 <div class="content">
-  <input type="text" name="origin" placeholder="Origem: " required>
-  <input type="text" name="destination" placeholder="Destino: " required>
-  <button (click)="searchBusLine()">Search bus line</button>
+  <div class="box-set-location">
+    <input type="text" placeholder="Source" />
+    <input type="text" placeholder="Destination" />
+    <input type="text" placeholder="Time" class="small-input-request" />
+    <img src="../../../assets/search.png">
+  </div>
 </div>
+<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng">
+  </agm-marker>
+</agm-map>

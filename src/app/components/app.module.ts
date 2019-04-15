@@ -7,10 +7,11 @@ import { ROUTES } from './app-route';
 import { LoginModule } from '../login/login.module';
 import { RegisterModule } from '../register/register.module';
 import { TravelRequestModule } from '../travel-request/travel-request.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
