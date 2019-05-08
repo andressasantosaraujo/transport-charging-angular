@@ -1,10 +1,8 @@
-<div class="content">
-  <div class="box-set-location">
-    <input type="text" placeholder="Source" />
-    <input type="text" placeholder="Destination" />
-    <input type="text" placeholder="Time" class="small-input-request" />
-    <img src="../../../assets/search.png">
-  </div>
+<div class="box-set-location">
+  <input type="text" placeholder="Source" />
+  <input type="text" placeholder="Destination" />
+  <input type="text" class="input-small" placeholder="Time" />
+  <a (click)="search($event)"><img src="../../../assets/icon/search.png"></a>
 </div>
 <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng">

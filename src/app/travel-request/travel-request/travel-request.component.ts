@@ -10,4 +10,7 @@ export class TravelRequestComponent {
   lat = -23.8779431;
   lng = -49.8046873;
   zoom = 15;
+
+  search(e) {
+  }
 }

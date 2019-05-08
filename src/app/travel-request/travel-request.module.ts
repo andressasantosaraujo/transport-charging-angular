@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TravelRequestComponent } from './travel-request/travel-request.component';
-import { TravelRequestService } from './travel-request/travel-request.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 
@@ -15,6 +14,6 @@ import { AgmCoreModule } from '@agm/core';
     )
   ],
   declarations: [TravelRequestComponent],
-  providers: [TravelRequestService]
+  providers: []
 })
 export class TravelRequestModule { }
