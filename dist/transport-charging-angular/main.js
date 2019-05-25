@@ -551,7 +551,7 @@ var TravelRequestModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"box-set-location\">\n  <input type=\"text\" placeholder=\"Source\" />\n  <input type=\"text\" placeholder=\"Destination\" />\n  <input type=\"text\" placeholder=\"Time\" />\n  <a (click)=\"search($event)\"><img src=\"../../../assets/icon/search.png\"></a>\n</div>\n<agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\">\n  <agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\n  </agm-marker>\n</agm-map>"
+module.exports = "<div class=\"box-set-location\">\n  <input type=\"text\" placeholder=\"Source\" />\n  <input type=\"text\" placeholder=\"Destination\" />\n  <input type=\"text\" class=\"input-small\" placeholder=\"Time\" />\n  <a (click)=\"search($event)\"><img src=\"../../../assets/icon/search.png\"></a>\n</div>\n<agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\">\n  <agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\n  </agm-marker>\n</agm-map>"
 
 /***/ }),
 
@@ -562,7 +562,7 @@ module.exports = "<div class=\"box-set-location\">\n  <input type=\"text\" place
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "agm-map {\n  height: 100%; }\n\n.box-set-location {\n  background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%);\n  width: 20%;\n  margin: 1%;\n  height: -webkit-fill-available;\n  border-radius: 10px; }\n\n.box-set-location input {\n    height: 48px;\n    width: 80%;\n    margin: 10px;\n    border: none;\n    background-color: #eef5f3;\n    border-radius: 15px;\n    padding-left: 20px;\n    font-family: 'Baloo Chettan', cursive;\n    font-size: 15px; }\n\n.box-set-location button {\n    height: 50px;\n    width: 200px;\n    border: none;\n    border-radius: 30px;\n    background-color: #28b498;\n    font-size: 15px;\n    color: #ffffff;\n    font-family: 'Baloo Chettan', cursive;\n    cursor: pointer; }\n\n.box-set-location button:hover {\n      background-color: #3cc6a5;\n      transition: ease-in-out .3s; }\n\nli {\n  width: 100%;\n  -webkit-text-decoration-style: none;\n          text-decoration-style: none; }\n\nspan {\n  margin-right: 30%;\n  text-align: center; }\n"
+module.exports = "agm-map {\n  height: 100%; }\n\n.box-set-location {\n  align-items: center;\n  background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%);\n  margin: 1%;\n  border-radius: 10px;\n  position: absolute;\n  z-index: 99;\n  display: flex;\n  width: 90%;\n  left: 50px;\n  padding: 10px; }\n\n.box-set-location input {\n    height: 48px;\n    width: 100%;\n    margin: 10px;\n    border: none;\n    background-color: #eef5f3;\n    border-radius: 15px;\n    padding-left: 20px;\n    font-family: 'Baloo Chettan', cursive;\n    font-size: 15px; }\n\n.box-set-location .input-small {\n    width: 50%; }\n\n.box-set-location button {\n    height: 50px;\n    width: 200px;\n    border: none;\n    border-radius: 30px;\n    background-color: #28b498;\n    font-size: 15px;\n    color: #ffffff;\n    font-family: 'Baloo Chettan', cursive;\n    cursor: pointer; }\n\n.box-set-location button:hover {\n      background-color: #3cc6a5;\n      transition: ease-in-out .3s; }\n"
 
 /***/ }),
 
@@ -592,7 +592,6 @@ var TravelRequestComponent = /** @class */ (function () {
         this.zoom = 15;
     }
     TravelRequestComponent.prototype.search = function (e) {
-        console.log('oi: ', e);
     };
     TravelRequestComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

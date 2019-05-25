@@ -1,8 +1,42 @@
-<div class="box-set-location">
-  <input type="text" placeholder="Source" />
-  <input type="text" placeholder="Destination" />
-  <input type="text" class="input-small" placeholder="Time" />
-  <a (click)="search($event)"><img src="../../../assets/icon/search.png"></a>
+<div class="box-info">
+  <div class="form-search-location"  *ngIf="!lineSelected && !message">
+      <input type="text" placeholder="Source" />
+      <input type="text" placeholder="Destination" />
+      <input type="text" class="input-small" placeholder="Time" />
+      <a (click)="search($event)"><img src="../../../assets/icon/search.png"></a>
+  </div>
+  <div class="list-select-location" *ngIf="openList">
+    <ul>
+      <li class="list-header" *ngFor="let title of titleList" class="list-header">
+        {{ title.name }}
+      </li>
+    </ul>
+    <ul *ngFor="let lineBusItem of lineBusList" (click)="selectLineBus(lineBusItem)">
+      <li class="list-content">{{ lineBusItem.numberLinha }}</li>
+      <li class="list-content">{{ lineBusItem.source }}</li>
+      <li class="list-content">{{ lineBusItem.destination }}</li>
+      <li class="list-content">{{ lineBusItem.time }}</li>
+      <li class="list-content">{{ lineBusItem.value }}</li>
+      <li class="list-content">{{ lineBusItem.duration }}</li>
+      <li class="list-content">{{ lineBusItem.licensePlate }}</li>
+      <li class="list-content">{{ lineBusItem.driver }}</li>
+    </ul>
+  </div>
+  <div class="form-show-info" *ngIf="lineSelected">
+    <img src="../../../assets/icon/origin.png"><p>From Rua Higino Soares de Azevedo, 37 - Sumaré/SP </p>
+    <img src="../../../assets/icon/time.png"><p class="small">Time 14h37min</p>
+    <img src="../../../assets/icon/bus.png"><p class="small">Line 746 </p>
+    <img src="../../../assets/icon/plate.png"><p class="small">Plate ETF7541 </p>   
+    <img src="../../../assets/icon/destination.png"><p>To Travessa José Lúcio Martins dos Santos, 290 - Hortolândia/SP </p>
+    <img src="../../../assets/icon/people.png"><p class="small">Driver Guilherme </p>
+    <img src="../../../assets/icon/money.png"><p class="small">Value R$5,50 </p>
+    <img src="../../../assets/icon/buy.png"><p class="small">Type Adult </p>
+    <button (click)="confirm()">Confirm</button>
+    <button>Cancel</button>
+  </div>
+  <div class="messages" *ngIf="message">
+    <h2> Get in on the bus line 746 in 30 minutes Or </h2> <a> Cancel </a>
+  </div>
 </div>
 <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng">
