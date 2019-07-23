@@ -1,3 +1,19 @@
-<p>
-  historic works!
-</p>
+<div class="box-info">
+  <div class="list-select-location">
+    <ul>
+      <li class="list-header" *ngFor="let title of titleList" class="list-header">
+        {{ title.name }}
+      </li>
+    </ul>
+    <ul *ngFor="let lineBusItem of lineBusList">
+      <li class="list-content">{{ lineBusItem.numberLinha }}</li>
+      <li class="list-content">{{ lineBusItem.source }}</li>
+      <li class="list-content">{{ lineBusItem.destination }}</li>
+      <li class="list-content">{{ lineBusItem.time }}</li>
+      <li class="list-content">{{ lineBusItem.value }}</li>
+      <li class="list-content">{{ lineBusItem.duration }}</li>
+      <li class="list-content">{{ lineBusItem.licensePlate }}</li>
+      <li class="list-content">{{ lineBusItem.driver }}</li>
+    </ul>
+  </div>
+</div>

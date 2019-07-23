@@ -8,6 +8,7 @@ import { LoginModule } from '../login/login.module';
 import { RegisterModule } from '../register/register.module';
 import { TravelRequestModule } from '../travel-request/travel-request.module';
 import { HttpClient } from '@angular/common/http';
+import { HistoricModule } from '../historic/historic.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClient } from '@angular/common/http';
     RouterModule.forRoot(ROUTES),
     LoginModule,
     RegisterModule,
-    TravelRequestModule
+    TravelRequestModule,
+    HistoricModule
   ],
   providers: [],
   bootstrap: [AppComponent]

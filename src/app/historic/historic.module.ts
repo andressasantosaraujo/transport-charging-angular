@@ -6,6 +6,9 @@ import { HistoricComponent } from './historic/historic.component';
   imports: [
     CommonModule
   ],
+  exports: [
+    HistoricComponent
+  ],
   declarations: [HistoricComponent]
 })
 export class HistoricModule { }
