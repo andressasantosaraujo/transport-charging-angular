@@ -1,0 +1,50 @@
+agm-map {
+    height: 300px;
+   }
+.content {
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.box-set-location {
+    background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%);
+    width: 90%;
+    margin: 2% 0;
+    height: 10%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    input {
+        height: 48px;
+        width: 420px;
+        margin: 10px;
+        border: none;
+        background-color: #eef5f3;
+        border-radius: 15px;
+        padding-left: 20px;
+        font-family: 'Baloo Chettan', cursive;
+        font-size: 15px;
+    }
+    .small-input-request {
+        width: 125px;
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        background-color: #28b498;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Baloo Chettan', cursive;
+        cursor: pointer;
+        &:hover {
+            background-color: #3cc6a5;
+            transition: ease-in-out .3s;
+        }
+    }
+}

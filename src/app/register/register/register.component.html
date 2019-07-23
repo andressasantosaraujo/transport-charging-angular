@@ -1,3 +1,30 @@
-<p>
-  register works!
-</p>
+<div class="container">
+    <div class="register">
+        <h1>
+            Create your account into T.C.A
+        </h1>
+        <p>
+            Sign up to T.C.A fill out the form below.
+        </p>
+        <div class="form-register">
+            <input type="text" placeholder="Name" />
+            <input type="password" placeholder="Password" />
+            <input type="number" placeholder="Contact" />
+            <input type="email" placeholder="Email" />
+            <input class="big-input-register" type="text" placeholder="Address" />
+            <input class="small-input-register" type="number" placeholder="Nº" />
+            <input class="big-input-register" type="number" placeholder="Credit card" />
+            <input class="small-input-register" type="number" placeholder="CCV" />            
+            <button>Sign up</button>
+        </div>
+    </div>
+    <div class="login">
+        <h1>
+            One of us?
+        </h1>
+        <p>
+            If you already have an account, click here to sign in.
+        </p>
+        <button (click)="signin()">Sign in</button>
+    </div>
+</div>
