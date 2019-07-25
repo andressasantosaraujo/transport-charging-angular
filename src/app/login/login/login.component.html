@@ -1,22 +1,24 @@
 <div class="container">
     <div class="login">
         <h1>
-            Sing in to T.C.A
+            Acesse o GoByBus
         </h1>
         <p>
-            Sign in to T.C.A and enjoy the practicality on your travel.
+            Compare os custos das viagens acessando o GoByBus.
         </p>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button (click)='signin()'>Sign in</button>
+        <form class="login" [formGroup]="loginObj" (ngSubmit)='signin()'>
+            <input formControlName='name' type="name" placeholder="Nome" />
+            <input formControlName='key' type="key" placeholder="Senha" />
+            <button type='submit' [disabled]='!loginObj.valid'>Acessar</button>
+        </form>
     </div>
     <div class="register">
         <h1>
-            New here?
+            Não possuí logon?
         </h1>
         <p>
-            Create your account to discovery the practicality to pay your travel!
+            Crie uma conta e escolha a opção de viagem que melhor atenda suas necessidades.
         </p>
-        <button (click)="signup()">Sign up</button>
+        <button (click)="signup()">Cadastrar</button>
     </div>
 </div>

@@ -9,6 +9,7 @@ import { RegisterModule } from '../register/register.module';
 import { TravelRequestModule } from '../travel-request/travel-request.module';
 import { HttpClient } from '@angular/common/http';
 import { HistoricModule } from '../historic/historic.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HistoricModule } from '../historic/historic.module';
     LoginModule,
     RegisterModule,
     TravelRequestModule,
-    HistoricModule
+    HistoricModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
